@@ -1,6 +1,6 @@
 import java.math.BigInteger;
 
-public class Planet {
+public class Planet { //ben make a accident
 
     // x-coordinate of planet
     private long xCoord;
