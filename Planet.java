@@ -3,31 +3,21 @@ import java.math.BigInteger;
 public class Planet {
 
     // x-coordinate of planet
-    private BigInteger xCoord;
+    private long xCoord;
+    private long yCoord;
+    private long xVelocity;
+    private long yVelocity;
+    private long mass;
+    private String fileName;
 
-    // y-coordinate of planet
-    private BigInteger yCoord;
-
-    // x-component of initial velocity
-    private BigInteger xVelocity;
-
-    // y-component of initial velocity
-    private BigInteger yVelocity;
-
-    // mass of planet
-    private BigInteger mass;
-
-    // filename of planet image
-    private String image;
-
-    public Planet (BigInteger xC, BigInteger yC, BigInteger xV, BigInteger yV, BigInteger m, String i) {
+    public Planet (long xC, long yC, long xV, long yV, long m, String i) {
 
         xCoord = xC;
         yCoord = yC;
         xVelocity = xV;
         yVelocity = yV;
         mass = m;
-        image = i;
+        fileName = i;
 
     }
 
