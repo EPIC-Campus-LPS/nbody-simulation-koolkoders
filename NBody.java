@@ -12,9 +12,15 @@ public class NBody {
 
     public static void main (String[] args) throws Exception {
 
-        File file = new File("planets.txt");
+        File file = new File("C:\\Users\\nathanh236_lpsk12\\Documents\\nbody-simulation\\nbody-simulation-koolkoders\\planets.txt");
 
         Scanner input = new Scanner(file);
+        StringBuffer sb = new StringBuffer();
+        while (input.hasNext()) {
+
+            sb.append(" " + input.nextLine());
+
+        }
 
         int bodies = 0;
 
