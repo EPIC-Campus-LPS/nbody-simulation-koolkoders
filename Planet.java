@@ -9,8 +9,11 @@ public class Planet { //ben make a accident
     private long yVelocity;
     private long mass;
     private String fileName;
+    private long xAcceleration;
+    private long yAcceleration;
 
-    public Planet (long xC, long yC, long xV, long yV, long m, String i) {
+
+    public Planet (long xC, long yC, long xV, long yV, long m, String i, long xA, long yA) {
 
         xCoord = xC;
         yCoord = yC;
@@ -18,6 +21,8 @@ public class Planet { //ben make a accident
         yVelocity = yV;
         mass = m;
         fileName = i;
+        xAcceleration = xA;
+        yAcceleration = yA;
 
     }
 
@@ -51,6 +56,18 @@ public class Planet { //ben make a accident
 
     }
 
+    public long getxAcceleration() {
+
+        return xAcceleration;
+
+    }
+
+    public long getyAcceleration() {
+
+        return yAcceleration;
+
+    }
+
     public void setxCoord(long xC) {
 
         xCoord = xC;
@@ -80,5 +97,19 @@ public class Planet { //ben make a accident
         mass = m;
 
     }
+
+    public void setxAcceleration(long xA) {
+
+        xAcceleration = xA;
+
+    }
+
+    public void setyAcceleration(long yA) {
+
+        yAcceleration = yA;
+
+    }
+
+
 
 }
