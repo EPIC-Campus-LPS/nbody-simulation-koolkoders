@@ -1,4 +1,4 @@
-import java.math.BigInteger;
+import java.util.Scanner;
 
 public class Planet { //ben make a accident
 
@@ -18,6 +18,66 @@ public class Planet { //ben make a accident
         yVelocity = yV;
         mass = m;
         fileName = i;
+
+    }
+
+    public long getxCoord() {
+
+        return xCoord;
+
+    }
+
+    public long getyCoord() {
+
+        return yCoord;
+
+    }
+
+    public long getxVelocity() {
+
+        return xVelocity;
+
+    }
+
+    public long getyVelocity() {
+
+        return yVelocity;
+
+    }
+
+    public long getMass() {
+
+        return mass;
+
+    }
+
+    public void setxCoord(long xC) {
+
+        xCoord = xC;
+
+    }
+
+    public void setyCoord(long yC) {
+
+        yCoord = yC;
+
+    }
+
+    public void setxVelocity(long xV) {
+
+        xVelocity = xV;
+
+    }
+
+    public void setyVelocity(long yV) {
+
+        yVelocity = yV;
+
+    }
+
+    public void setMass(long m) {
+
+        mass = m;
 
     }
 
