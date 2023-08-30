@@ -12,7 +12,7 @@ public class Planet { //ben make a accident
     private long xForce;
     private long yForce;
 
-    public Planet (long xC, long yC, long xV, long yV, long m, String i, long xF, long yF) {
+    public Planet (long xC, long yC, long xV, long yV, long m, String i) {
 
         xCoord = xC;
         yCoord = yC;
@@ -20,8 +20,6 @@ public class Planet { //ben make a accident
         yVelocity = yV;
         mass = m;
         fileName = i;
-        xForce = xF;
-        yForce = yF;
 
     }
 
