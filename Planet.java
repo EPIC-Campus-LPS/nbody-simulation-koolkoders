@@ -12,6 +12,8 @@ public class Planet { //ben make a accident
     private long xForce;
     private long yForce;
 
+    private long netForce;
+
     public Planet (long xC, long yC, long xV, long yV, long m, String i) {
 
         xCoord = xC;
@@ -106,6 +108,12 @@ public class Planet { //ben make a accident
     public void setyForce(long yF) {
 
         yForce = yF;
+
+    }
+
+    public void setNetForce(long nF) {
+
+        netForce = nF;
 
     }
 

@@ -22,6 +22,7 @@ public class NBody {
 
         String uRadius = input.nextLine();
 
+        // Constructs each planet in the bodies array
         for(int i = 0; i < numBodies; i++) {
 
             String line = input.nextLine();
@@ -35,9 +36,33 @@ public class NBody {
             long mass = Long.parseLong(temp[4]);
             String fortnite2 = temp[5];
 
-
-
             bodies[0] = new Planet(xCoord, yCoord, xVel, yVel, mass, fortnite2);
+
+        }
+
+        // Updates forces for each planet
+        for(int k = 0; k < numBodies; k++) {
+
+            long yf = 0;
+            long xf = 0;
+
+            for(int j = 0; j < numBodies; j++) {
+
+                if((k != j) && (k != 3)) {
+
+                    yf += yForce(bodies[k], bodies[j]);
+
+                    xf += xForce(bodies[k], bodies[j]);
+
+                }
+
+            }
+
+            bodies[k].setyForce(yf);
+            bodies[k].setxForce(xf);
+
+            long nf = (long) Math.sqrt((yf*yf) + (xf*xf));
+            bodies[k].setNetForce(nf);
 
         }
 
