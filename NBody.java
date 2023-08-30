@@ -42,7 +42,8 @@ public class NBody {
         }
 
     }
-//Calculating force FROM p1 to P2 🤑🤑🤑🤑🤑
+
+    // Calculates the y Force between planet 1 and planet 2
     public static long yForce(Planet p1, Planet p2) {
 
         double g = 6.67 * Math.pow(10,-11);
@@ -65,9 +66,31 @@ public class NBody {
         long angle = deltaY / r;
 
         // y force = force * sin(angle)
-        long yForce = (long) (force * Math.sin(angle));
+        return (long) (force * Math.sin(angle));
+    }
 
-        return yForce;
+    // Calculates x Force between planet 1 and planet 2
+    public static long xForce(Planet p1, Planet p2) {
+
+        double g = 6.67 * Math.pow(10,-11);
+
+
+        // change in x = planet1 x - planet2 x
+        // change in y = planet1 y - planet2 y
+        long deltaX = p1.getxCoord() - p2.getxCoord();
+        long deltaY = p1.getyCoord() - p2.getyCoord();
+
+        // r = square root of ((change in x)(squared) + (change in y)(squared))
+        long r = (long) Math.sqrt(Math.pow(deltaX, 2) + Math.pow(deltaY, 2));
+
+        // force = (G*m1*m2) / (r squared)
+        long force = (long) ((g * p1.getMass() * p2.getMass()) / (r * r)) ;
+
+        // angle = (change in x) / r
+        long angle = deltaX / r;
+
+        // x force = force * sin(angle)
+        return (long) (force * Math.cos(angle));
     }
 
 }
