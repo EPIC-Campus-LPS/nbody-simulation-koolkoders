@@ -12,19 +12,40 @@ public class NBody {
 
     public static void main (String[] args) throws Exception {
 
-        File file = new File("C:\\Users\\nathanh236_lpsk12\\Documents\\nbody-simulation\\nbody-simulation-koolkoders\\planets.txt");
+        File file = new File("C:\\Users\\mariev718_lpsk12\\IdeaProjects\\nbody-simulation-koolkoders\\planets.txt");
 
         Scanner input = new Scanner(file);
-        StringBuffer sb = new StringBuffer();
-        while (input.hasNext()) {
 
-            sb.append(" " + input.nextLine());
+        int numBodies = Integer.parseInt((input.nextLine()));
+
+        Planet[] bodies = new Planet[numBodies];
+
+        String uRadius = input.nextLine();
+
+        for(int i = 0; i < numBodies; i++) {
+
+            String line = input.nextLine();
+
+            String[] temp = line.split(" ");
+
+            long xCoord = Long.parseLong(temp[0]);
+            long yCoord = Long.parseLong(temp[1]);
+            long xVel = Long.parseLong(temp[2]);
+            long yVel = Long.parseLong(temp[3]);
+            long mass = Long.parseLong(temp[4]);
+            String fortnite2 = temp[5];
+
+
+
+            bodies[0] = new Planet(xCoord, yCoord, xVel, yVel, mass, fortnite2, );
 
         }
 
-        int bodies = 0;
+    }
 
-        Planet[] game = new Planet[bodies];
+    public static long yForce() {
+
+
 
     }
 
