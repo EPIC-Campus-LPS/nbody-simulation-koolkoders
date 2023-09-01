@@ -9,11 +9,12 @@ public class Planet { //ben make a accident
     private long yVelocity;
     private long mass;
     private String fileName;
-    private long xAcceleration;
-    private long yAcceleration;
+    private long xForce;
+    private long yForce;
 
+    private long netForce;
 
-    public Planet (long xC, long yC, long xV, long yV, long m, String i, long xA, long yA) {
+    public Planet (long xC, long yC, long xV, long yV, long m, String i) {
 
         xCoord = xC;
         yCoord = yC;
@@ -21,8 +22,6 @@ public class Planet { //ben make a accident
         yVelocity = yV;
         mass = m;
         fileName = i;
-        xAcceleration = xA;
-        yAcceleration = yA;
 
     }
 
@@ -56,17 +55,19 @@ public class Planet { //ben make a accident
 
     }
 
-    public long getxAcceleration() {
+    public long getxForce() {
 
-        return xAcceleration;
+        return xForce;
+
+    }
+
+    public long getyForce() {
+
+        return yForce;
 
     }
 
-    public long getyAcceleration() {
 
-        return yAcceleration;
-
-    }
 
     public void setxCoord(long xC) {
 
@@ -98,18 +99,64 @@ public class Planet { //ben make a accident
 
     }
 
-    public void setxAcceleration(long xA) {
+    public void setxForce(long xF) {
 
-        xAcceleration = xA;
-
-    }
-
-    public void setyAcceleration(long yA) {
-
-        yAcceleration = yA;
+        xForce = xF;
 
     }
 
+    public void setyForce(long yF) {
 
+        yForce = yF;
+
+    }
+
+    public void setNetForce(long nF) {
+
+        netForce = nF;
+
+    }
+
+    public void addToxCoord(long input) {
+
+        xCoord += input;
+
+    }
+
+    public void addToyCoord(long input) {
+
+        yCoord += input;
+
+    }
+
+    public void addToxVelocity(long input) {
+
+        xVelocity += input;
+
+    }
+
+    public void addToyVelocity(long input) {
+
+        yVelocity += input;
+
+    }
+
+    public void addToMass(long input) {
+
+        mass += input;
+
+    }
+
+    public void addToxForce(long input) {
+
+        xForce += input;
+
+    }
+
+    public void addToyForce(long input) {
+
+        yForce += input;
+
+    }
 
 }
