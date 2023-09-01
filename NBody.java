@@ -73,6 +73,24 @@ public class NBody {
 
     }
 
+    public static void updateVelocity(int numBodies, Planet bodies[]) {
+
+
+
+    }
+
+    public static void updatePosition(int numBodies, Planet bodies[]) {
+
+
+
+    }
+
+    public static void updateAcceleration(int numBodies, Planet bodies[]) {
+
+
+
+    }
+
     // Calculates the y Force between planet 1 and planet 2
     public static long yForce(Planet p1, Planet p2) {
 
