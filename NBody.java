@@ -12,6 +12,7 @@ public class NBody {
 
     public static void main (String[] args) throws Exception {
 
+        // Takes input from text file and puts it into variables and an array
         File file = new File("C:\\Users\\mariev718_lpsk12\\IdeaProjects\\nbody-simulation-koolkoders\\planets.txt");
 
         Scanner input = new Scanner(file);
@@ -40,7 +41,11 @@ public class NBody {
 
         }
 
-        // Updates forces for each planet
+    }
+
+    // updates forces for each planet in an array
+    public static void updateForces(int numBodies, Planet bodies[]) {
+
         for(int k = 0; k < numBodies; k++) {
 
             long yf = 0;
