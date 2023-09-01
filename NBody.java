@@ -73,19 +73,20 @@ public class NBody {
 
     }
 
-    public static void updateVelocity(int numBodies, Planet bodies[]) {
+    public static void updateVelocity(int numBodies, Planet p) {
 
         long
 
     }
 
-    public static void updatePosition(int numBodies, Planet bodies[]) {
+    public static void updatePosition(int numBodies, Planet p) {
 
 
 
     }
 
-    public static void updateAcceleration(int numBodies, Planet bodies[]) {
+    public static void updateAcceleration(int numBodies, Planet p) {
+
 
 
 
