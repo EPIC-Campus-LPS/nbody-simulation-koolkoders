@@ -3,7 +3,7 @@ import java.io.File;
 public class NBody {
 
     private double duration;
-    private double tIncrement;
+    private static double tIncrement;
 
     public NBody(double d, double t) {
         duration = d;
@@ -81,7 +81,8 @@ public class NBody {
 
     public static void updatePosition(Planet p) {
 
-
+        p.setxCoord((long)(p.getxVelocity() * tIncrement));
+        p.setyCoord((long)(p.getyVelocity() * tIncrement));
 
     }
 
