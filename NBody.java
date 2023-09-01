@@ -118,4 +118,18 @@ public class NBody {
         return (long) (force * Math.cos(angle));
     }
 
+    public static long xForce() {
+
+        return 0L;
+
+    }
+
+    public static long fTotal() {
+
+        return 0L;
+
+    }
+
+
+
 }
