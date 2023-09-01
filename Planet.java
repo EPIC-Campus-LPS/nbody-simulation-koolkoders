@@ -12,6 +12,8 @@ public class Planet { //ben make a accident
     private long xForce;
     private long yForce;
     private long netForce;
+    private long xAccel;
+    private long yAccel;
 
     public Planet (long xC, long yC, long xV, long yV, long m, String i) {
 
@@ -66,7 +68,23 @@ public class Planet { //ben make a accident
 
     }
 
+    public long getxAccel() {
 
+        return xAccel;
+
+    }
+
+    public long getyAccel() {
+
+        return yAccel;
+
+    }
+
+    public long getNetForce() {
+
+        return netForce;
+
+    }
 
     public void setxCoord(long xC) {
 
@@ -113,6 +131,18 @@ public class Planet { //ben make a accident
     public void setNetForce(long nF) {
 
         netForce = nF;
+
+    }
+
+    public void setxAccel(long xA) {
+
+        xAccel = xA;
+
+    }
+
+    public void setyAccel(long yA) {
+
+        yAccel = yA;
 
     }
 
