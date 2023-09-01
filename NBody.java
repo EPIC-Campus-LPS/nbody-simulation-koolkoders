@@ -82,14 +82,15 @@ public class NBody {
 
     public static void updatePosition(Planet p) {
 
-
+        p.setxCoord((long)(p.getxVelocity() * tIncrement));
+        p.setyCoord((long)(p.getyVelocity() * tIncrement));
 
     }
 
     public static void updateAcceleration(Planet p) {
 
-
-
+        p.setxAccel(p.getxForce() / p.getMass());
+        p.setyAccel(p.getyForce() / p.getMass());
 
     }
 
