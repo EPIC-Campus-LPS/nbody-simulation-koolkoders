@@ -3,7 +3,7 @@ import java.io.File;
 public class NBody {
 
     private double duration;
-    private double tIncrement;
+    private static double tIncrement;
 
     public NBody(double d, double t) {
         duration = d;
@@ -75,7 +75,8 @@ public class NBody {
 
     public static void updateVelocity(Planet p) {
 
-
+        p.setxVelocity((long) ((p.getxVelocity()) + ((p.getxAccel())*tIncrement)));
+        p.setyVelocity((long) ((p.getyVelocity()) + ((p.getyAccel())*tIncrement)));
 
     }
 

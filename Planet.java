@@ -7,6 +7,7 @@ public class Planet { //ben make a accident
     private long yCoord;
     private long xVelocity;
     private long yVelocity;
+    private long netVelocity;
     private long mass;
     private String fileName;
     private long xForce;
@@ -86,6 +87,12 @@ public class Planet { //ben make a accident
 
     }
 
+    public long getNetVelocity() {
+
+        return netVelocity;
+
+    }
+
     public void setxCoord(long xC) {
 
         xCoord = xC;
@@ -107,6 +114,12 @@ public class Planet { //ben make a accident
     public void setyVelocity(long yV) {
 
         yVelocity = yV;
+
+    }
+
+    public void setNetVelocity(long nV) {
+
+        netVelocity = nV;
 
     }
 
