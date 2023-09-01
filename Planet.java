@@ -80,6 +80,12 @@ public class Planet { //ben make a accident
 
     }
 
+    public long getNetForce() {
+
+        return netForce;
+
+    }
+
     public void setxCoord(long xC) {
 
         xCoord = xC;
