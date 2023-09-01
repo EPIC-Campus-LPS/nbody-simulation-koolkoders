@@ -75,7 +75,7 @@ public class NBody {
 
     public static void updateVelocity(int numBodies, Planet bodies[]) {
 
-
+        long
 
     }
 
