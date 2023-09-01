@@ -88,8 +88,8 @@ public class NBody {
 
     public static void updateAcceleration(Planet p) {
 
-
-
+        p.setxAccel(p.getxForce() / p.getMass());
+        p.setyAccel(p.getyForce() / p.getMass());
 
     }
 
